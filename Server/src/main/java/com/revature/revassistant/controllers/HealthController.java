@@ -20,7 +20,8 @@ public class HealthController {
     @RequestMapping(value = "/ping", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody public String ping() {
-        return "pong!";
+        String test = "test";
+        return test;
     }
 
     @RequestMapping(value = "/test/{testMessage}", method = RequestMethod.POST)
